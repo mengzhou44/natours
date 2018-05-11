@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../_common/header';
+import Header from '../_layout/header';
 
 export default (props) => {
     return (
