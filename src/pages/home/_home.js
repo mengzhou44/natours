@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Navigation from '../_layout/navigation';
 import Header from '../_layout/header';
 import Footer from '../_layout/footer';
@@ -10,19 +10,24 @@ import Book from './book';
 
 
 
-export default (props) => {
-    return (
-        <div>
-            <Navigation />
-            <Header />
-            <main>
-                <About />
-                <Features />
-                <Tours />
-                <Stories />
-                <Book />
-            </main>
-            <Footer />
-        </div>
-    );
-}
+export default class Home extends Component {
+
+    render() {
+        return (
+            <div>
+                <Navigation />
+                <Header />
+                <main>
+                    <About />
+                    <Features />
+                    <Tours />
+                    <Stories />
+                    <Book />
+                </main>
+
+                <Footer />
+            </div>
+
+        );
+    }
+} 

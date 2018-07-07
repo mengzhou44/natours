@@ -1,4 +1,8 @@
 .section-tours {
     padding: 10rem 0;
     margin: 0 auto;
+    
+    @include respond(tab-port) {
+        padding: 20rem 0 10rem 0;
+    }
 }

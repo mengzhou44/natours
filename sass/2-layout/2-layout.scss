@@ -1,3 +1,10 @@
 @import 'header';
 @import 'footer';
 @import 'navigation';
+
+.row {
+    @include respond(phone) {
+        max-width: 50rem;
+    }
+    
+}

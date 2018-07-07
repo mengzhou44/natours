@@ -88,6 +88,17 @@
 
 
 
+
+    //FUNCTIONALITY
+    &__checkbox:checked ~ &__background {
+        transform: scale(80);
+    }
+
+    &__checkbox:checked ~ &__nav {
+        opacity: 1;
+        width: 100%;
+    }
+    
     //ICON
     &__icon {
         position: relative;
@@ -112,6 +123,7 @@
 
         &::before { top: -.8rem; }
         &::after { top: .8rem; }
+
     }
 
     &__button:hover &__icon::before {
@@ -122,5 +134,19 @@
         top: 1rem;
     }
 
+    &__checkbox:checked + &__button &__icon {
+        background-color: transparent;
+    }
+
+    &__checkbox:checked + &__button &__icon::before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    &__checkbox:checked + &__button &__icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
   
 }
+

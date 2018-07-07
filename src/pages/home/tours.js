@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from '../_common/card';
 
+
 export default (props) => {
     return (
         <section className='section-tours'>
@@ -12,7 +13,7 @@ export default (props) => {
 
             <div className='row'>
                 <div className='col s12 m4'>
-                    <Card price='$297' title='The Sea Explorer' index={1}>
+                    <Card price='$297' title='The Sea Explorer' index={1} >
                         <ul>
                             <li>3 day tours</li>
                             <li>Up to 30 people</li>
@@ -23,7 +24,7 @@ export default (props) => {
                     </Card>
                 </div>
                 <div className='col s12 m4'>
-                    <Card price='$497' title='The Forest Hiker' index={2}>
+                    <Card price='$497' title='The Forest Hiker' index={2} >
                         <ul>
                             <li>7 day tours</li>
                             <li>Up to 40 people</li>
@@ -34,7 +35,7 @@ export default (props) => {
                     </Card>
                 </div>
                 <div className='col s12 m4'>
-                    <Card price='$897' title='The Snow Adventurer' index={3}>
+                    <Card price='$897' title='The Snow Adventurer' index={3} >
                         <ul>
                             <li>5 day tours</li>
                             <li>Up to 15 people</li>
